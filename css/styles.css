@@ -55,10 +55,20 @@ nav{
    height:200px;
 }
 
-#menu h2{
-    color: #800020
+#menu h2, #aboutUs h2{
+    color: #800020;
+    text-align: center
+}
+#menu, #aboutUs{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3em;
 }
 #menu{
-    font-family: 'Dosis', sans-serif;
-    
+    margin-top:50px;
+
+}
+#aboutUs{
+    margin-top:50px;
+    width:50%;
+    text-align: center
 }
