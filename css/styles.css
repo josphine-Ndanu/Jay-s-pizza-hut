@@ -50,6 +50,15 @@ nav{
     font-size: 24px;
 }
 
-.card{
+.card img{
    
+   height:200px;
+}
+
+#menu h2{
+    color: #800020
+}
+#menu{
+    font-family: 'Dosis', sans-serif;
+    
 }
