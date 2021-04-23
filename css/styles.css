@@ -21,6 +21,9 @@
     padding-left: 350px;
     
 }
+#home #placeOrder{
+    width: 20%
+    }
 @media only screen and (max-width: 800px) {
 
     #home h1{
@@ -34,10 +37,11 @@
     /* font-size: 5em; */
     padding-left: 0;
     color: white;
-    padding-bottom: 100px;
+    
 }
-
-}
+#home #placeOrder{
+width: 30%
+}}
 ul li a{
     color: white;
     padding: 30px;
@@ -75,7 +79,7 @@ nav{
 
 #placeOrder{
     background-color: #800020;
-    width:50%;
+    width:40%;
     text-align: center;
   margin-top: 50px;
  
