@@ -98,14 +98,15 @@ nav{
 }
 
 #prices{
-background-image: url("");
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-
-}
-#prices tr{
-   
+    background-image: url("../assets/menu-blur.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 80%;
+ opacity: 0.8;;
+    margin-top: 50px;
     font-weight: 700;
-    font-size: 1.3em;
+}
+#prices h3{
+color:  #800020dc;
 }
