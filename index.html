@@ -23,9 +23,7 @@
     <div class="container-fluid" id="home">
         <nav class="navbar navbar-expand-md">
             <a href="#" class="navbar-brand"></a>
-            <!-- <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-    </button> -->
+            
             <div class="navbar-collapse collapse nav justify-content-end" id="navbar ">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="#" class="nav-link">Home </a> </li>
@@ -142,45 +140,45 @@
         </div>
 
         <div class="container">
-            <form class="">
+            <form class="" id="formOrder">
                 <h1>Order Here</h1>
                 <label for="type">Pizza type </label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" id="type">
 
-                    <option value="1">Veg Tikka</option>
-                    <option value="2">Hawaian</option>
-                    <option value="3">Pepperoni</option>
-                    <option value="3">Margheritta</option>
+                    <option value="vegtikka">Veg Tikka</option>
+                    <option value="hawaian">Hawaian</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="margheritta">Margheritta</option>
                 </select>
 
-                <label for="type">Size </label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="size">Size </label>
+                <select class="form-select" aria-label="Default select example" id="size">
 
-                    <option value="1">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Large</option>
-
-                </select>
-                <label for="type">Crust </label>
-                <select class="form-select" aria-label="Default select example">
-
-                    <option value="1">Thin</option>
-                    <option value="2">Regular</option>
-                    <option value="3">Thick</option>
+                    <option value="Small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
 
                 </select>
+                <label for="crust">Crust </label>
+                <select class="form-select" aria-label="Default select example" id="crust">
 
-                <label for="type">Toppings </label>
-                <select class="form-select" aria-label="Default select example">
-
-                    <option value="1">Bacon</option>
-                    <option value="2">Mushroom</option>
-                    <option value="3">Green Pepper</option>
-                    <option value="3">Extra Cheese</option>
+                    <option value="thin">Thin</option>
+                    <option value="regular">Regular</option>
+                    <option value="thick">Thick</option>
 
                 </select>
 
-                <button class=" ">Add</button>
+                <label for="topping">Toppings </label>
+                <select class="form-select "   aria-label="Default select example" id="topping">
+                    <option value="bacon">Bacon</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="greenpepper">Green Pepper</option>
+                    <option value="extracheese">Extra Cheese</option>
+
+                </select>
+              
+
+                <button id="addCart" type="submit" >Add</button>
             </form>
         </div>
 
