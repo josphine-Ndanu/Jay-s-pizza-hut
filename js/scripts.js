@@ -142,7 +142,7 @@ $(document).ready(function () {
             "</td>" +
 
             "<td>" +
-             newPizza.quantity() +
+            newPizza.quantity() +
             "</td>" +
             "<td>" +
             newPizza.getPizzaPrice() +
