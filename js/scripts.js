@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(document).ready(function (event) {
+    event.preventDefault();
     // global variables 
     var myOrder = [];
     var totalAMount = 0;
@@ -152,9 +153,15 @@ $(document).ready(function () {
 
     })
 
+     $("#pickup").click(function(){
+         alert("Thanks for ordering, your order will be ready in a few")
+     })
+   
+    $("#delivery").click(function(){
+        alert("Thanks for ordering")
+    })
+}); 
 
 
 
 
-
-})
