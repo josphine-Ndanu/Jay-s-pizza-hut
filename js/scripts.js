@@ -61,7 +61,6 @@ $(document).ready(function () {
         } else {
             return 150;
         }
-
     }
 
 
@@ -73,9 +72,8 @@ $(document).ready(function () {
         } else {
             return 150;
         }
-
-
     }
+
     Pizza.prototype.quantity = function () {
         var selectedQuantity = $("#number").val()
         return selectedQuantity;
@@ -83,7 +81,6 @@ $(document).ready(function () {
 
     Pizza.prototype.getPizzaPrice = function () {
         return (this.getCrustPrice() + this.getToppingPrice() + this.getTypePrice()) * this.quantity();
-
 
     }
 
@@ -121,7 +118,37 @@ $(document).ready(function () {
         console.log(inputtedQuantity)
 
 
+        $("#summary").append(
+            "<tr>" +
+            '<th scope="row">' +
+            newPizza.type + "</th>" +
 
+            "<td>" +
+            newPizza.size +
+            " - " +
+            newPizza.getTypePrice() +
+            "</td>" +
+
+            "<td>" +
+            newPizza.crust +
+            " - " +
+            newPizza.getCrustPrice() +
+            "</td>" +
+
+            "<td>" +
+            newPizza.topping +
+            " - " +
+            newPizza.getToppingPrice() +
+            "</td>" +
+
+            "<td>" +
+             newPizza.quantity() +
+            "</td>" +
+            "<td>" +
+            newPizza.getPizzaPrice() +
+            "</td>" +
+            "</tr>"
+        );
 
     })
 
