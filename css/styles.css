@@ -24,7 +24,7 @@
 #home #placeOrder{
     width: 20%
     }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
     #home h1{
         /* font-size: 8em; */
@@ -39,9 +39,17 @@
     color: white;
     
 }
-#home #placeOrder{
-width: 30%
-}}
+
+
+}
+@media only screen and (max-width: 1000px) {
+    #home #placeOrder, #menu #placeOrder{
+        width: 50%
+        }
+
+}
+
+
 ul li a{
     color: white;
     padding: 30px;
@@ -78,7 +86,7 @@ nav{
 }
 
 #placeOrder{
-    background-color: #800020;
+    background-color: #800020dc;
     width:40%;
     text-align: center;
   margin-top: 50px;
@@ -87,4 +95,17 @@ nav{
 .btn{
     color: white;
     font-size: 1.5em;
+}
+
+#prices{
+background-image: url("");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+
+}
+#prices tr{
+   
+    font-weight: 700;
+    font-size: 1.3em;
 }
