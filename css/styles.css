@@ -110,3 +110,6 @@ nav{
 #prices h3{
 color:  #800020dc;
 }
+.totalAmount, #checkout{
+    display: none;
+}

@@ -115,9 +115,8 @@
                     <p>Medium - Ksh 1250</p>
                     <p>Small - 950</p>
                 </div>
-
-
             </div>
+
             <div class="row">
                 <div class="col menu-box">
                     <h3>Pepperoni</h3>
@@ -199,11 +198,17 @@
                 <tbody id="summary"></tbody>
 
             </table>
+            <p class="totalAmount hidden">
+                Total: Ksh. <span id="totalAmount"></span>
+            </p>
+           
             <button class="">Proceed to Checkout</button>
         </div>
+
         <div class="row">
             <div class="col">
                 <button id="delivery">Delivery</button>
+                <p class="deliveryCharges"> </p>
             </div>
             <div class="col">
                 <button id="pickup">Pickup</button>
@@ -219,17 +224,17 @@
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="email" class="form-control" id="name">
+                    <input type="name" class="form-control" id="name">
 
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Contact</label>
-                    <input type="email" class="form-control" id="contact">
+                    <input type="number" class="form-control" id="contact">
                     <div id="emailHelp" class="form-text">We'll never share your contact with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Location</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="Location" class="form-label">Location</label>
+                    <input type="location" class="form-control" id="location">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

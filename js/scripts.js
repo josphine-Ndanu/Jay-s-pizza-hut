@@ -1,5 +1,5 @@
-$(document).ready(function (event) {
-    event.preventDefault();
+$(document).ready(function () {
+
     // global variables 
     var myOrder = [];
     var totalAMount = 0;
@@ -85,7 +85,7 @@ $(document).ready(function (event) {
 
     }
 
-    Pizza.prototype.getSubtotal = function () {
+    Pizza.prototype.getTotal = function () {
         return totalAMount;
     }
 
@@ -116,7 +116,14 @@ $(document).ready(function (event) {
 
         totalAMount += newPizza.getPizzaPrice();
         console.log(totalAMount) // test calculation
-        console.log(inputtedQuantity)
+
+        // console.log(inputtedQuantity)
+
+
+
+
+
+
 
 
         $("#summary").append(
@@ -151,17 +158,31 @@ $(document).ready(function (event) {
             "</tr>"
         );
 
+
+        $("#totalAmount").empty();
+        $("#totalAmount").append(newPizza.getTotal());
+        $(".totalAmount").show();
+
+
+        $("button#pickup").click(function (event) {
+            event.preventDefault();
+
+            alert("Thanks for ordering, your order will be ready in a few. Your order amounts to Ksh " + newPizza.getTotal())
+        })
+
+        $("button#delivery").click(function (event) {
+            event.preventDefault();            
+            $("#checkout").show();
+
+            var name = $("#name").val();
+            var location = $("#location").val();
+            $(".deliveryCharges").append("Thanks for ordering. Our delivery charges are Ksh 300. You will pay Ksh " + ((newPizza.getTotal()) + parseInt(300)))
+        })
     })
 
-     $("#pickup").click(function(){
-         alert("Thanks for ordering, your order will be ready in a few")
-     })
-   
-    $("#delivery").click(function(){
-        alert("Thanks for ordering")
-    })
-}); 
 
 
 
 
+
+});
