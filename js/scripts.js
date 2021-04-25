@@ -112,22 +112,11 @@ $(document).ready(function () {
 
         console.log(myOrder) // test array
 
-
-        // for (let i = 0; i < myOrder.length; i++) {
-        //     totalAMount += myOrder[i].getPizzaPrice()
-        // }
-
         totalAMount += newPizza.getPizzaPrice();
+        
         console.log(totalAMount) // test calculation
 
-        // console.log(inputtedQuantity)
-
-
-
-
-
-
-
+        
 
         $("#summary").append(
             "<tr>" +
@@ -167,15 +156,6 @@ $(document).ready(function () {
         $("#totalAmount").empty();
         $("#totalAmount").append(newPizza.getTotal());
         $(".totalAmount").show();
-
-
-
-
-
-
-
-
-
     })
     $("#placeOrder").click(function(){
         $("#formOrder").show();
@@ -188,9 +168,7 @@ $(document).ready(function () {
     var inputtedQuantity = $("#number").val();
     var total = " "
 
-    var newPizza = new Pizza(selectedType, selectedSize, selectedCrust, selectedTopping, inputtedQuantity)
-
-    
+    var newPizza = new Pizza(selectedType, selectedSize, selectedCrust, selectedTopping, inputtedQuantity); 
 
 
     $("button#proceedCheckout").click(function (event) {

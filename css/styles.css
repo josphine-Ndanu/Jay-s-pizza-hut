@@ -146,4 +146,15 @@ background-color: #800020dc;
  .totalAmount,#order,#checkout{
     display: none;
 } 
-  
+  footer{
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      color:white;
+      margin-top: 50px;
+      /* background-color: #800020dc;; */
+      background-image: url("https://cdn.hipwallpaper.com/i/28/66/KPwTxB.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+  }
