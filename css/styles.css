@@ -1,160 +1,186 @@
-#home{
+#home {
     background-image: url("../assets/background1.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#home h1{
+
+#home h1 {
     font-family: 'Berkshire Swash', cursive;
     color: white;
     font-size: 8em;
-  text-align: center;
-  padding-top: 200px;
-  padding-left: 350px;
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 350px;
 }
-#home h2{
+
+#home h2 {
     color: #800020;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
-    font-size:64px;
+    font-size: 64px;
     padding-left: 350px;
-    
+
 }
-#home #placeOrder{
+
+#home #placeOrder {
     width: 20%
-    }
+}
+
 @media only screen and (max-width: 900px) {
 
-    #home h1{
+    #home h1 {
         /* font-size: 8em; */
         color: #800020;
         padding-left: 0;
         padding-bottom: 100px;
-         padding-top: 50px; 
+        padding-top: 50px;
     }
-#home h2{
-    /* font-size: 5em; */
-    padding-left: 0;
-    color: white;
-    
-}
+
+    #home h2 {
+        /* font-size: 5em; */
+        padding-left: 0;
+        color: white;
+
+    }
 
 
 }
+
 @media only screen and (max-width: 1000px) {
-    #home #placeOrder, #menu #placeOrder{
+
+    #home #placeOrder,
+    #menu #placeOrder {
         width: 50%
-        }
+    }
 
 }
 
 
-ul li a{
+ul li a {
     color: white;
     padding: 30px;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: #800020
 }
-nav{
-  
-    font-size: 24px;
+
+nav {
+    font-size: 20px; 
 }
 
-.card img{
-   
-   height:200px;
+.card img {
+
+    height: 200px;
 }
 
-#menu h2, #aboutUs h2{
+#menu h2,
+#aboutUs h2 {
     color: #800020;
     text-align: center
 }
-#menu, #aboutUs{
+
+#menu,
+#aboutUs {
     font-family: 'Dosis', sans-serif;
     font-size: 1.3em;
 }
-#menu{
-    margin-top:50px;
+
+#menu {
+    margin-top: 50px;
 
 }
-#aboutUs{
-    margin-top:50px;
-    width:50%;
+
+#aboutUs {
+    margin-top: 50px;
+    width: 50%;
     text-align: center
 }
 
-#placeOrder{
+#placeOrder {
     background-color: #800020dc;
-    width:40%;
+    width: 40%;
     text-align: center;
-  margin-top: 50px;
- 
+    margin-top: 50px;
+
 }
-.btn{
+
+.btn {
     color: white;
     font-size: 1.5em;
 }
 
-#prices{
+#prices {
     background-image: url("../assets/menu-blur.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 80%;
- opacity: 0.8;;
+    opacity: 0.8;
+    text-align: center;
     margin-top: 50px;
     font-weight: 700;
 }
-#prices h3{
-color:  #800020dc;
+
+#prices h3 {
+    color: #800020dc;
 }
 
-#formOrder{
+#formOrder {
     width: 50%;
     margin: auto;
-    background-color:rgb(251, 241, 226);
-    margin-top:50px;
+    background-color: rgb(251, 241, 226);
+    margin-top: 50px;
 }
-#formOrder button{
-margin-left: 250px;
-height:50px;
-background-color: #800020dc;
+
+#formOrder button {
+    margin-left: 250px;
+    height: 50px;
+    background-color: #800020dc;
 
 }
-#checkout button, #proceedCheckout{
+
+#checkout button,
+#proceedCheckout {
     background-color: #800020dc;
     color: white;
 }
 
-#checkout{
+#checkout {
     width: 80%;
     margin: auto;
 }
- #formOrder{  
-  
+
+#formOrder {
+
     margin: auto;
     margin-top: 50px;
     display: none;
 }
-#order{
-   
+
+#order {
+
     margin: auto;
     margin-top: 50px;
 }
- .totalAmount,#order,#checkout{
+
+.totalAmount,
+#order,
+#checkout {
     display: none;
-} 
-  footer{
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      color:white;
-      margin-top: 50px;
-      /* background-color: #800020dc;; */
-      background-image: url("https://cdn.hipwallpaper.com/i/28/66/KPwTxB.jpg");
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-  }
+}
+
+footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin-top: 50px;
+    /* background-color: #800020dc;; */
+    background-image: url("../assets/footerimg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
