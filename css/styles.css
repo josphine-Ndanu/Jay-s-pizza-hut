@@ -110,6 +110,20 @@ nav{
 #prices h3{
 color:  #800020dc;
 }
+
+#formOrder{
+    width: 50%;
+    margin: auto;
+    background-color:rgb(251, 241, 226);
+    margin-top:50px;
+}
+#formOrder button{
+margin-left: 250px;
+height:50px;
+background-color: #800020dc;
+
+}
 /* .totalAmount, #checkout{
     display: none;
 } */
+
