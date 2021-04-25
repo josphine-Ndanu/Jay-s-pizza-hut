@@ -91,6 +91,9 @@ $(document).ready(function () {
 
     $("#formOrder").submit(function (event) {
         event.preventDefault();
+        
+        
+    //    $("#formOrder").show();
         var selectedType = $("#type").val();
         var selectedSize = $("#size").val();
         var selectedCrust = $("#crust").val();
@@ -158,6 +161,8 @@ $(document).ready(function () {
             "</tr>"
         );
 
+        $("#order").show();
+
 
         $("#totalAmount").empty();
         $("#totalAmount").append(newPizza.getTotal());
@@ -171,6 +176,9 @@ $(document).ready(function () {
 
 
 
+    })
+    $("#placeOrder").click(function(){
+        $("#formOrder").show();
     })
    
     var selectedType = $("#type").val();

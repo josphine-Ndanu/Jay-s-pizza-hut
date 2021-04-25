@@ -123,7 +123,27 @@ height:50px;
 background-color: #800020dc;
 
 }
-/* .totalAmount, #checkout{
-    display: none;
-} */
+#checkout button, #proceedCheckout{
+    background-color: #800020dc;
+    color: white;
+}
 
+#checkout{
+    width: 80%;
+    margin: auto;
+}
+ #formOrder{  
+  
+    margin: auto;
+    margin-top: 50px;
+    display: none;
+}
+#order{
+   
+    margin: auto;
+    margin-top: 50px;
+}
+ .totalAmount,#order,#checkout{
+    display: none;
+} 
+  
