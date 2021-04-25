@@ -164,25 +164,47 @@ $(document).ready(function () {
         $(".totalAmount").show();
 
 
-        $("button#pickup").click(function (event) {
-            event.preventDefault();
 
-            alert("Thanks for ordering, your order will be ready in a few. Your order amounts to Ksh " + newPizza.getTotal())
-        })
 
-        $("button#delivery").click(function (event) {
-            event.preventDefault();            
-            $("#checkout").show();
 
-            var name = $("#name").val();
-            var location = $("#location").val();
-            $(".deliveryCharges").append("Thanks for ordering. Our delivery charges are Ksh 300. You will pay Ksh " + ((newPizza.getTotal()) + parseInt(300)))
-        })
+
+
+
+
+    })
+   
+    var selectedType = $("#type").val();
+    var selectedSize = $("#size").val();
+    var selectedCrust = $("#crust").val();
+    var selectedTopping = $("#topping").val();
+    var inputtedQuantity = $("#number").val();
+    var total = " "
+
+    var newPizza = new Pizza(selectedType, selectedSize, selectedCrust, selectedTopping, inputtedQuantity)
+
+    
+
+
+    $("button#proceedCheckout").click(function (event) {
+        event.preventDefault();
+        $('#checkout').prop("disabled", true);
+        $("#checkout").fadeIn();
     })
 
 
+    $("button#pickup").click(function (event) {
+         var name = $("#name").val()
+        event.preventDefault();
+        $(".deliveryCharges").empty();
+        $(".deliveryCharges").append("Hello "+name+ " Thanks for ordering, your order will be ready in a few. Your order amounts to Ksh " + newPizza.getTotal())
+    // console.log(name)
+    })
 
-
-
-
+    $("button#delivery").click(function (event) {
+        event.preventDefault();
+        var name = $("#name").val();
+    var location = $("#location").val();
+        $(".deliveryCharges").empty();
+        $(".deliveryCharges").append("Hello " +name +" Thanks for ordering. Our delivery charges are Ksh 300. You will pay Ksh " + ((newPizza.getTotal()) + parseInt(300)) + "<br> You order will be delivered at " + location + " in 1 hour")
+    })
 });

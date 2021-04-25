@@ -201,19 +201,11 @@
             <p class="totalAmount hidden">
                 Total: Ksh. <span id="totalAmount"></span>
             </p>
-           
-            <button class="">Proceed to Checkout</button>
+
+
         </div>
 
-        <div class="row">
-            <div class="col">
-                <button id="delivery">Delivery</button>
-                <p class="deliveryCharges"> </p>
-            </div>
-            <div class="col">
-                <button id="pickup">Pickup</button>
-            </div>
-        </div>
+        <button id="proceedCheckout">Proceed to Checkout</button>
 
 
         <div class="container" id="checkout">
@@ -224,22 +216,31 @@
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="name" class="form-control" id="name">
+                    <input type="name" class="form-control" id="name" required>
 
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Contact</label>
-                    <input type="number" class="form-control" id="contact">
+                    <input type="number" class="form-control" id="contact" required>
                     <div id="emailHelp" class="form-text">We'll never share your contact with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="Location" class="form-label">Location</label>
-                    <input type="location" class="form-control" id="location">
+                    <input type="location" class="form-control" id="location" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
             </form>
-
+            <div class="row">
+                <div class="col">
+                    <button id="delivery">Delivery</button>
+                  
+                </div>
+                <div class="col">
+                    <button id="pickup">Pickup</button>
+                </div>
+            </div>
+            <p class="deliveryCharges"> </p>
         </div>
 
 
