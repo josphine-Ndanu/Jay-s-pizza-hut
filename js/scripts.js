@@ -21,7 +21,8 @@ $(document).ready(function () {
                 return 1600;
             } else if (this.type === "pepperoni") {
                 return 1250;
-            } else {
+            } 
+            else {
                 return 1200;
             }
 

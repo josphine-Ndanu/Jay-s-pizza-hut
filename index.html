@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icon.jpg" type="image/icon type">
     <title>Jays Pizzeria</title>
 </head>
 
@@ -140,7 +141,7 @@
                 <h1>Order Here</h1>
                 <label for="type">Pizza type </label>
                 <select class="form-select" aria-label="Default select example" id="type">
-
+                    <option value=""> </option>
                     <option value="vegtikka">Veg Tikka</option>
                     <option value="hawaian">Hawaian</option>
                     <option value="pepperoni">Pepperoni</option>
@@ -149,7 +150,7 @@
 
                 <label for="size">Size </label>
                 <select class="form-select" aria-label="Default select example" id="size">
-
+                    <option value=""> </option>
                     <option value="Small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
@@ -157,7 +158,7 @@
                 </select>
                 <label for="crust">Crust </label>
                 <select class="form-select" aria-label="Default select example" id="crust">
-
+                    <option value=""> </option>
                     <option value="thin">Thin</option>
                     <option value="regular">Regular</option>
                     <option value="thick">Thick</option>
@@ -166,6 +167,7 @@
 
                 <label for="topping">Toppings </label>
                 <select class="form-select " aria-label="Default select example" id="topping">
+                    <option value=""> </option>
                     <option value="bacon">Bacon</option>
                     <option value="mushroom">Mushroom</option>
                     <option value="greenpepper">Green Pepper</option>
@@ -175,7 +177,7 @@
                 <label for="number">Number of Pizzas</label>
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
 
-                <button id="addCart" class="btn btn-dark rounded-top" type="submit">Add</button>
+                <button id="addCart" class="btn btn-dark rounded-top" type="submit">Add to Cart</button>
             </form>
         </div>
 
